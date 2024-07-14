@@ -1,0 +1,262 @@
+ 1  sudo apt-get update
+    2  sudo apt-get install -y ca-certificates curl gnupg
+    3  sudo mkdir -p /etc/apt/keyrings
+    4  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    5  NODE_MAJOR=20
+    6  sudo apt-get update
+    7  sudo apt-get install nodejs -y
+    8  node -v && npm -v
+    9  apt install npm
+   10  node -v && npm -v
+   11  sudo nano ~/.profile
+   12  source ~/.profile
+   13  git --version
+   14  sudo su postgres
+   15  npx create-strapi-app@latest strapi
+   16  dir
+   17  ls
+   18  sudo su postgres
+   19  ls
+   20  cd strapi/
+   21  npm run develop
+   22  nano /config/plugins.js
+   23  dir
+   24  cd config
+   25  ls
+   26  nano plugins.js
+   27  nano middlewares.js 
+   28  s
+   29  ls
+   30  cd ..
+   31  ls
+   32  cat .env
+   33  nano .env
+   34  cd ..
+   35  ls
+   36  sudo npm i -g pm2
+   37  pm2 start 'npm run develop' --name strapi-dev
+   38  ls
+   39  cd ..
+   40  ls
+   41  cd ..
+   42  ls
+   43  cd home/
+   44  ls
+   45  cd ubuntu/
+   46  ls
+   47  cd strapi/
+   48  ls
+   49  nano .env
+   50  ls
+   51  cat /etc/nginx/conf.d/sitename.conf
+   52  ls
+   53  cd ..
+   54  ls
+   55  cd .
+   56  ls
+   57  cat ~/etc/nginx/conf.d/sitename.conf
+   58  cat etc/nginx/conf.d/sitename.conf
+   59  cd ..
+   60  ls
+   61  cd ..
+   62  ls
+   63  cat etc/nginx/conf.d/sitename.conf
+   64  ls
+   65  cd etc
+   66  ls
+   67  cd nginx
+   68  ls
+   69  cd conf.d/
+   70  ls
+   71  dir
+   72  cat sitename.conf
+   73  nano sitename.conf
+   74  sudo nginx -t
+   75  nano sitename.conf
+   76  sudo nginx -t
+   77  sudo server restart nginx  or  sudo systemctl restart nginx
+   78  sudo systemctl restart nginx
+   79  ls
+   80  cd..
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd ..
+   85  ls
+   86  cd ..
+   87  ls
+   88  cd env
+   89  ls
+   90  cd home
+   91  ls
+   92  cd ubuntu/
+   93  ls
+   94  pm2 list
+   95  pm2 restart 0
+   96  pm2 list
+   97  pm2 logs
+   98  pm2 list
+   99  pm2 logs
+  100  pm2 list
+  101  ls
+  102  cat etc/nginx/conf.d/sitename.conf
+  103  cat /etc/nginx/conf.d/sitename.conf
+  104  nano /etc/nginx/conf.d/sitename.conf
+  105  nano /etc/nginx/sites-enabled/default 
+  106  sudo systemctl restart nginx
+  107  pm2 list
+  108  nano /etc/nginx/conf.d/sitename.conf
+  109  rm /etc/nginx/conf.d/sitename.conf
+  110  cat /etc/nginx/conf.d/sitename.conf
+  111  sudo systemctl restart nginx
+  112  nano /etc/nginx/sites-enabled/default 
+  113  pm2 list
+  114  ls
+  115  sudo nginx -t
+  116  sudo systemctl restart nginx
+  117  pm2 list
+  118  cat /etc/nginx/sites-enabled/default 
+  119  nano /etc/nginx/conf.d/sitename.conf
+  120  sudo systemctl restart nginx
+  121  nano /etc/nginx/conf.d/sitename.conf
+  122  sudo systemctl restart nginx
+  123  sudo nginx -t
+  124  sudo systemctl restart nginx
+  125  pm2 logs
+  126  pm2 list
+  127  pm2 logs --lines 100
+  128  pm2 logs 0 --lines 100
+  129  pm2 delete 0
+  130  pm2 list
+  131  cd strapi/
+  132  ls
+  133  npm run start
+  134  ls
+  135  cd config/
+  136  ls
+  137  nano plugins.js 
+  138  npm run start
+  139  npm install @strapi/provider-upload-aws-s3
+  140  npm run start
+  141  npm run develop
+  142  cd..
+  143  cd ..
+  144  ls
+  145  nano module.exports = {
+  146  nano ecosystem.config.js
+  147  pm2 start ecosystem.config.js
+  148  pm2 list
+  149  pm2 logs
+  150  nano ecosystem.config.js
+  151  mv ./ecosystem.config.js ./strapi/
+  152  pm2 start ecosystem.config.js
+  153  pm2 start ./strapi/ecosystem.config.js
+  154  pm2 logs
+  155  pm2 list
+  156  pm2 delete 0
+  157  rm ./strapi/ecosystem.config.js 
+  158  pm2 --name strapi start npm run develop
+  159  cd strapi/
+  160  pm2 --name strapi start npm run develop
+  161  npm run develop
+  162  pm2 --name strapi start "npm run develop"
+  163  pm2 list
+  164  pm2 delete 0
+  165  pm2 delete 1
+  166  pm2 delete 2
+  167  pm2 --name strapi start "npm run develop"
+  168  pm2 list
+  169  pm2 logs
+  170  pm2 list
+  171  ls
+  172  cd config/
+  173  ls
+  174  cd plugins.js 
+  175  ls
+  176  cat plugins.js 
+  177  ls
+  178  cd ..
+  179  cat .env
+  180  nano .env
+  181  pm2 restart 0
+  182  ls
+  183  pm2 list
+  184  sudo su postgres
+  185  ls
+  186  cd config/ls
+  187  cd config/
+  188  ls
+  189  ccat middlewares.js 
+  190  cat middlewares.js 
+  191  cd ..
+  192  ls
+  193  cat .env
+  194  ls
+  195  cd config/
+  196  ls
+  197  cat middlewares.js 
+  198  git init
+  199  git status
+  200  nano .gitignore 
+  201  cat .gitignore 
+  202  git status
+  203  git branch -M main
+  204  git branch
+  205  git add .
+  206  git commit -m "Initial commit"
+  207  git remote add origin https://github.com/rajgop1/suganth-admin-strapi.git
+  208  git push -u origin main
+  209  psql
+  210  pql
+  211  ls
+  212  cat .env
+  213  cd  config/
+  214  ls
+  215  cat database.js 
+  216  ls
+  217  cat plugins.js 
+  218  ls
+  219  cd ..
+  220  ls 
+  221  exit
+  222  nano strapi-start-command.js
+  223  node strapi-start-command.js 
+  224  nano strapi-start-command.js
+  225  node strapi-start-command.js 
+  226  pm2 list
+  227  nano system-strat-pm2-start-process.txt
+  228  exit
+  229  pm2 list
+  230  pm2 delete 1
+  231  pm2 delete 2
+  232  pm2 logs
+  233  pm2 delete 0
+  234  exit
+  235  node strapi-start-command.js 
+  236  pm2 logs
+  237  pm2 delete 0
+  238  pm2 --name strapi start "npm run develop"
+  239  pm2 logs
+  240  ls
+  241  pm2 list
+  242  pm2 delete 0
+  243  ls
+  244  exit
+  245  git status
+  246  git add .
+  247  git push 
+  248  git commint -m "system config new files"
+  249  git commi\t -m "system config new files"
+  250  git commit -m "system config new files"
+  251  git push
+  252  pm2 list
+  253  ls
+  254  npm run develop
+  255  pm2 list
+  256  pm2 --name strapi start "npm run develop"
+  257  pm2 logs
+  258  pm2 delete 0
+  259  pm2 list
+  260  exit
+  261  ls
+  262  history
