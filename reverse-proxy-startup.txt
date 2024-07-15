@@ -1,0 +1,537 @@
+sudo apt update
+    2  sudo apt install nginx
+    3  sudo systemctl start nginx
+    4  sudo systemctl enable nginx
+    5  sudo systemctl status nginx
+    6  sudo ufw allow 'Nginx Full'
+    7  sudo nano /etc/nginx/sites-available/reverse-proxy
+    8  ls
+    9  history
+   10  sudo nano /etc/nginx/sites-available/reverse-proxy
+   11  ls
+   12  sudo nano /etc/nginx/sites-available/reverse-proxy
+   13  ls
+   14  cd /etc/nginx/ssl
+   15  ;s
+   16  ls
+   17  cat private-key.key 
+   18  ls
+   19  cd
+   20  ls
+   21  sudo mv organicledger_net.csr organicledger_net.key /etc/nginx/ssl/
+   22  nano /etc/nginx/sites-available/reverse-proxy.conf 
+   23  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+   24  sudo mv *organicledger* /etc/nginx/ssl/
+   25  cd /etc/nginx/ssl/
+   26  ls
+   27  history
+   28  cd
+   29  sudo nginx -t
+   30  nano /etc/nginx/sites-enabled/
+   31  cd /etc/nginx/sites-enabled/
+   32  la
+   33  nano reverse-proxy.conf 
+   34  sudo systemctl reload nginx
+   35  tail -f /var/log/nginx/access.log
+   36  nano default 
+   37  rm default 
+   38  sudo rm default 
+   39  la
+   40  nano reverse-proxy.conf 
+   41  cd
+   42  cd hello-world-express/node_modules/
+   43  cd ..
+   44  nodemon index.js 
+   45  pm2 start index.js 
+   46  pm2 logs 0
+   47  netstat -tupln
+   48  nano index.js 
+   49  cd
+   50  history
+   51  tail -f /var/log/nginx/access.log
+   52  sudo systemctl reload nginx
+   53  netstat -tplun
+   54  nano /etc/nginx/sites-enabled/reverse-proxy.conf 
+   55  curl http://localhost:5000
+   56  nano /etc/nginx/sites-enabled/reverse-proxy.conf 
+   57  sudo tail -f /var/log/nginx/error.log
+   58  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf 
+   59  sudo systemctl reload nginx
+   60  sudo nginx -t
+   61  ls
+   62  la
+   63  ls
+   64  history
+   65  la
+   66  cd .keys/
+   67  ls
+   68  openssl req -new -newkey rsa:2048 -nodes -keyout your_domain.key -out your_domain.csr
+   69  ls
+   70  cat your_domain.csr 
+   71  openssl req -new -newkey rsa:2048 -nodes -keyout your_domain.key -out your_domain.csr
+   72  cat your_domain.csr 
+   73  ls
+   74  la
+   75  history
+   76  cd /etc/nginx/ssl/
+   77  la
+   78  ls -a
+   79  ls -ltar
+   80  rm *organic*
+   81  sudo rm *organic*
+   82  la
+   83  cd
+   84  la
+   85  mv __* /etc/nginx/ssl
+   86  sudo mv __* /etc/nginx/ssl
+   87  cd -
+   88  la
+   89  cd ..
+   90  la
+   91  cd
+   92  histoty
+   93  nano /etc/nginx/sites-enabled/reverse-proxy.conf
+   94  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+   95  la
+   96  cd -
+   97  ls
+   98  cd ssl/
+   99  ls
+  100  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+  101  sudo systemctl reload nginx
+  102  sudo nginx -t
+  103  la
+  104  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+  105  sudo nginx -t
+  106  la
+  107  mv private-key.key __organicledger_site.key
+  108  sudo mv private-key.key __organicledger_site.key
+  109  cmp
+  110  cmp *.crt
+  111  cat *.crt
+  112  grep -Rn "organicledger*"
+  113  cd
+  114  cd .keys/
+  115  ls
+  116  rm *
+  117  sudo rm *
+  118  ls
+  119  cd organicledger_net/
+  120  ls
+  121  cd ..
+  122  rm -rf organicledger_net/
+  123  ls
+  124  la
+  125  cd ..
+  126  cd /etc/nginx/ssl/
+  127  ls
+  128  rm *
+  129  sudo rm *
+  130  la
+  131  history
+  132  openssl req -new -newkey rsa:2048 -nodes -keyout __organicledger_site.key -out __organicledger_site.csr
+  133  sudo openssl req -new -newkey rsa:2048 -nodes -keyout __organicledger_site.key -out __organicledger_site.csr
+  134  la
+  135  cat *.csr
+  136  la
+  137  cd
+  138  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+  139  sudo nginx -t
+  140  cd -
+  141  la
+  142  cd 
+  143  la
+  144  mv __* /etc/nginx/ssl/
+  145  sudo mv __* /etc/nginx/ssl/
+  146  la
+  147  cd -
+  148  la
+  149  sudo nginx -t
+  150  sudo systemctl reload nginx
+  151  cd
+  152  la
+  153  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+  154  sudo nginx -t
+  155  sudo systemctl reload nginx
+  156  sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+  157  sudo nginx -t
+  158  sudo systemctl reload nginx
+  159  ls
+  160  sls
+  161  history | grep  log
+  162  sudo tail -f /var/log/nginx/error.log
+  163  date
+  164  sudo tail -f /var/log/nginx/access.log
+  165  sudo tail -f /var/log/nginx/error.log
+  166  cd /var/log/nginx/
+  167  la
+  168  tail -f error.log
+  169  cd
+  170  cd /etc/nginx/
+  171  ks
+  172  ls
+  173  nano nginx.conf 
+  174  sudo nano nginx.conf 
+  175  sudo systemctl reload nginx
+  176  sudo nginx -t
+  177  sudo nano nginx.conf 
+  178  sudo nginx -t
+  179  sudo nano nginx.conf 
+  180  sudo systemctl restart nginx
+  181  sudo nano nginx.conf 
+  182  sudo systemctl restart nginx
+  183  cd
+  184  tail -f /var/log/nginx/
+  185  tail -f /var/log/nginx/access.log
+  186  tail -f /var/log/nginx/error.log
+  187  cd
+  188  ls
+  189  mv __organicledger_site.ca-bundle /etc/nginx/ssl/
+  190  ls
+  191  sudo mv __organicledger_site.ca-bundle /etc/nginx/ssl/
+  192  cd /etc/nginx/ssl/
+  193  la
+  194  cat *.ca*
+  195  cat *.ca-bundle
+  196  clear
+  197  cat *.ca-bundle
+  198  la
+  199  nano __organicledger_site.crt
+  200  sudo nano __organicledger_site.crt
+  201  sudo systemctl restart nginx
+  202  sudo nginx -t
+  203  sudo systemctl reload nginx
+  204  ls
+  205  history
+  206  ls
+  207  cd /etc/nginx/
+  208  sudo nano nginx.conf 
+  209  ls
+  210  cd sites-available/
+  211  ls
+  212  nano reverse-proxy.conf 
+  213  sudo nano reverse-proxy.conf 
+  214  sudo nginx -t
+  215  sudo systemctl reload nginx
+  216  cat reverse-proxy.conf 
+  217  sudo systemctl reload nginx
+  218  history
+  219  sudo systemctl reload nginx
+  220  sudo systemctl restart nginx
+  221  cd ..
+  222  cd sites-enabled/
+  223  la
+  224  cat reverse-proxy.conf 
+  225  d
+  226  cd
+  227  wget http://13.239.134.151:5011/
+  228  cat index.html 
+  229  cd -
+  230  sudo nano reverse-proxy.conf 
+  231  sudo systemctl restart nginx
+  232  ls
+  233  nano /etc/nginx/sites-available/reverse-proxy.conf 
+  234  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  235  history
+  236  sudo nginx -t
+  237  sudo systemctl reload nginx
+  238  sudo systemctl restart nginx
+  239  ls
+  240  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  241  sudo nginx -t
+  242  sudo systemctl reload nginx
+  243  sudo systemctl restart nginx
+  244  ls
+  245  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  246  sudo nginx -t
+  247  sudo systemctl reload nginx
+  248  sudo systemctl restart nginx
+  249  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  250  wget http://3.106.167.202:5011;
+  251  cat index.html.1 
+  252  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  253  sudo nginx -t
+  254  sudo systemctl reload nginx
+  255  sudo systemctl restart nginx
+  256  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  257  sudo nginx -t
+  258  sudo systemctl restart nginx
+  259  sudo systemctl reload nginx
+  260  sudo nano /etc/nginx/sites-available/reverse-proxy.conf 
+  261  sudo nginx -t
+  262  sudo systemctl reload nginx
+  263  sudo systemctl restart nginx
+  264  ls
+  265  git pull
+  266  ls
+  267  history
+  268  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  269  ls
+  270  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  271  history
+  272  sudo systemctl reload nginx
+  273  sudo systemctl restart nginx
+  274  ls
+  275  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  276  ls
+  277  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  278  sudo nginx -t
+  279  sudo systemctl restart nginx
+  280  netstat -tupln
+  281  ls
+  282  ls
+  283  history
+  284  cat /etc/resolv.conf
+  285  apt update
+  286  sudo apt update
+  287  ls
+  288  history
+  289  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  290  pm2 logs
+  291  la
+  292  ls
+  293  history
+  294  cat /etc/nginx/sites-available/reverse-proxy.conf
+  295  ls
+  296  cat /etc/nginx/sites-available/reverse-proxy.conf
+  297  ls
+  298  history
+  299  ls
+  300  hsitory
+  301  history
+  302  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  303  ls
+  304  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  305  history
+  306  sudo systemctl reload nginx
+  307  sudo systemctl restart nginx
+  308  la
+  309  ls
+  310  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  311  sudo systemctl restart nginx
+  312  sudo systemctl reload nginx
+  313  ls
+  314  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  315  history
+  316  sudo systemctl restart nginx
+  317  pm2 start "serve -s build -l 5173"
+  318  pm2 logs 0
+  319  la
+  320  ls
+  321  pm2 delete 1
+  322  pm2 logs
+  323  history
+  324  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  325  history
+  326  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  327  sudo nginx -t
+  328  sudo systemctl restart nginx
+  329  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  330  sudo nginx -t
+  331  sudo systemctl restart nginx
+  332  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  333  ls
+  334  history
+  335  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  336  sudo nginx -t
+  337  sudo systemctl restart nginx
+  338  ls
+  339  history
+  340  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  341  sudo nginx -t
+  342  sudo systemctl restart nginx
+  343  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  344  y
+  345  ls
+  346  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  347  ls
+  348  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  349  sudo nginx -t
+  350  sudo systemctl restart nginx
+  351  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  352  sudo nginx -t
+  353  sudo systemctl restart nginx
+  354  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  355  ls
+  356  history
+  357  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  358  sudo systemctl restart nginx
+  359  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  360  sudo systemctl restart nginx
+  361  history
+  362  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  363  cat /etc/nginx/sites-available/reverse-proxy.conf | grep theorganic
+  364  cat /etc/nginx/sites-available/reverse-proxy.conf | grep theorganic -n
+  365  sudo nano /etc/nginx/sites-available/reverse-proxy.conf
+  366  ls
+  367  pm2 list
+  368  dir
+  369  ls
+  370  cat index.html
+  371  cd hello-world-express/
+  372  ls
+  373  cat index.js
+  374  nginx
+  375  sudo su
+  376  ls
+  377  exit
+  378  ls
+  379  cd /etc/nginx/sites-available/
+  380  ls
+  381  nano default
+  382  cd ..
+  383  ls
+  384  cd home
+  385  ls
+  386  cd ubuntu/
+  387  ls
+  388  cat index.html
+  389  cat index.html.1
+  390  ls
+  391  cd hello-world-express/
+  392  ls
+  393  lscat index.js
+  394  cat index.js
+  395  exit
+  396  ls
+  397  sudo su
+  398  nginx
+  399  history
+  400  tomcat
+  401  vi /etc/nginx/nginx.conf
+  402  cat /etc/nginx/nginx.conf
+  403  cat /etc/httpd/conf/httpd.conf
+  404  git
+  405  git status
+  406  ls
+  407  cat index.html
+  408  ls
+  409  cd hello-world-express/
+  410  ls
+  411  cat index.js
+  412  history
+  413  ls
+  414  sudo systemctl restart nginx
+  415  sudo systemctl status nginx
+  416  cat /etc/nginx/nginx.conf
+  417  ls
+  418  cd ..
+  419  ls
+  420  cd ..
+  421  ls
+  422  cd etc
+  423  ls
+  424  cd nginx/
+  425  ls
+  426  cat conf.d
+  427  cd conf.d
+  428  ls
+  429  cd ..
+  430  ls
+  431  cat nginx.conf
+  432  ls
+  433  cd ..
+  434  ls
+  435  cd ..
+  436  ls
+  437  cd usr
+  438  ls
+  439  cd share
+  440  ls
+  441  cd nginx
+  442  ls
+  443  cd modules
+  444  ls
+  445  dir
+  446  cat ngx_http_xslt_filter_module.so 
+  447  cd ..
+  448  ls
+  449  cd html
+  450  ls
+  451  cat index.html
+  452  ls
+  453  cd ..
+  454  ls
+  455  cd modules-available/
+  456  ls
+  457  cat mod-http-xslt-filter.conf 
+  458  ls
+  459  cd ..
+  460  ls
+  461  cd ..
+  462  ls
+  463  cd ..
+  464  ls
+  465  cd ..
+  466  ls
+  467  cd boot
+  468  cd ..
+  469  cd etc
+  470  ls
+  471  cd nginx/
+  472  ls
+  473  cd proxy-params
+  474  ls
+  475  cat proxy_params 
+  476  cat nginx.conf
+  477  ls
+  478  cd sites-enabled/
+  479  ls
+  480  cat reverse-proxy.conf 
+  481  nano reverse-proxy.conf 
+  482  sudo nano reverse-proxy.conf 
+  483  cat reverse-proxy.conf 
+  484  ls
+  485  cd ..
+  486  ls
+  487  cd ..
+  488  ls
+  489  cd ..
+  490  ls
+  491  cd home
+  492  ls
+  493  cd ubuntu/
+  494  ls
+  495  sudo systemctl status nginx
+  496  sudo systemctl restart nginx
+  497  sudo systemctl status nginx
+  498  ls
+  499  cd hello-world-express/
+  500  ls
+  501  cat index.js
+  502  exit
+  503  ls
+  504  sudo nano reverse-proxy.conf 
+  505  ls
+  506  cd ..
+  507  ls
+  508  cd ..
+  509  ls
+  510  cd etc/
+  511  ls
+  512  cd nginx/
+  513  ls
+  514  cd conf.d/
+  515  ls
+  516  cd ..
+  517  ls
+  518  cat nginx.conf
+  519  ls
+  520  cd sites-
+  521  cd sites-available/
+  522  ls
+  523  nano reverse-proxy.conf 
+  524  sudo nano reverse-proxy.conf 
+  525  cat reverse-proxy.conf 
+  526  ls
+  527  cd ..
+  528  ls
+  529  cd ..
+  530  ls
+  531  cd ..
+  532  ls
+  533  cd home/
+  534  ls
+  535  cd ubuntu/
+  536  ls
+  537  history
